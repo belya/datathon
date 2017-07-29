@@ -19,4 +19,5 @@ train_X, test_X, train_y, test_y = train_test_split(X, y, test_size=0.3)
 
 model = GradientBoostingClassifier(n_estimators=300)
 model.fit(train_X, train_y)
-joblib.dump(model, './model.pkl')
+joblib.dump(model, './loyalty_model.pkl')
+
